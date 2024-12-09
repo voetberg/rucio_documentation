@@ -87,6 +87,13 @@ One needs then to create some scopes associated with the accounts:
   $ rucio-admin scope add --account jdoe --scope user.jdoe
 ```
 
+Any added scope must match the scope regex given by the `SCOPE` dictionary in the server policy package. 
+[Please view the Policy Package Documentation for extra details.](/docs/operator/policy_packages). 
+
+Note: 
+  If you wish to use [DIRAC](https://github.com/DIRACGrid/DIRAC) for grid management, you must ensure the scope schema matches the requirements of [DIRACS' namespaces.](https://dirac.readthedocs.io/en/latest/AdministratorGuide/Resources/catalog.html). 
+  For conflicts between the rucio namespace and the DIRAC namespace, the plugin subclassed from `ScopeExtractionAlgorithms` to `extract_scope` can be used to re-define the scope common between the two.
+
 Only the owner of the scope or privileged users can write into the scope.
 
 To list all the scopes:
