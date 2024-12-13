@@ -40,7 +40,8 @@
                         }
                     ]
                 },
-                "user/developing_with_rucio"
+                "user/developing_with_rucio",
+                "user/migrating_from_35_client"
             ],
             "Operator": [
                 "operator/setting_up_demo",
