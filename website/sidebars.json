@@ -32,7 +32,7 @@
                 "user/configuring_the_client",
                 "user/using_the_client",
                 "user/developing_with_rucio",
-                "user/migrating_from_35_client"
+                "user/migrate_36_cli"
             ],
             "Operator": [
                 "operator/setting_up_demo",
